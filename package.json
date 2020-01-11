@@ -1,0 +1,40 @@
+{
+  "name": "lit-snowpack",
+  "version": "1.0.0",
+  "description": "Lit-Element + Snowpack starter",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "snowpack --include 'index.js'",
+    "start": "serve ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thepassle/lit-snowpack.git"
+  },
+  "snowpack": {
+    "webDependencies": [
+      "lit-html",
+      "lit-element",
+      "lit-html/directives/until.js"
+    ],
+    "dedupe": [
+      "lit-element",
+      "lit-html"
+    ]
+  },
+  "keywords": [],
+  "author": "Pascal Schilp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thepassle/lit-snowpack/issues"
+  },
+  "homepage": "https://github.com/thepassle/lit-snowpack#readme",
+  "devDependencies": {
+    "serve": "^11.3.0",
+    "snowpack": "^1.0.2"
+  },
+  "dependencies": {
+    "lit-element": "^2.2.1",
+    "lit-html": "^1.1.2"
+  }
+}
